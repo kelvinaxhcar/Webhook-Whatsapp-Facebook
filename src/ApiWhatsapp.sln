@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiWhatsapp", "ApiWhatsapp\ApiWhatsapp.csproj", "{34AB6BC3-BF4C-46C5-9E43-98035AEBB654}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiWhatsapp", "ApiWhatsapp\ApiWhatsapp.csproj", "{34AB6BC3-BF4C-46C5-9E43-98035AEBB654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiWhatsapp.Dominio", "ApiWhatsapp.Dominio\ApiWhatsapp.Dominio.csproj", "{2287379F-AC70-4EA5-8F65-7BA57E91D1D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{34AB6BC3-BF4C-46C5-9E43-98035AEBB654}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34AB6BC3-BF4C-46C5-9E43-98035AEBB654}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34AB6BC3-BF4C-46C5-9E43-98035AEBB654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2287379F-AC70-4EA5-8F65-7BA57E91D1D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2287379F-AC70-4EA5-8F65-7BA57E91D1D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2287379F-AC70-4EA5-8F65-7BA57E91D1D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2287379F-AC70-4EA5-8F65-7BA57E91D1D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
