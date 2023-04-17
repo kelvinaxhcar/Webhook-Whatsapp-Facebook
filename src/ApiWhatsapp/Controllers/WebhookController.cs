@@ -1,16 +1,13 @@
-﻿using ApiWhatsapp.Model;
+﻿using ApiWhatsapp.Dominio.WhatSapp;
+using ApiWhatsapp.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using OpenAI.GPT3.Managers;
-using OpenAI.GPT3;
 using System;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using OpenAI.GPT3.ObjectModels.RequestModels;
-using OpenAI.GPT3.ObjectModels;
 
 namespace ApiWhatsapp.Controllers
 {
@@ -50,10 +47,10 @@ namespace ApiWhatsapp.Controllers
             var message = await ObterMensagem(res);
             Console.WriteLine(message);
             var numero = await ObterNumero(res);
-            var RequestsWhatSapp = new RequestsWhatSapp();
+            var requestsWhatSapp = new RequestsWhatSapp();
             if (message != null)
             {
-                await RequestsWhatSapp.EnviarMensagem("teste", numero, "TEXT");
+                await requestsWhatSapp.EnviarMensagem("teste", numero, "TEXT");
             }
         }
 
@@ -87,7 +84,7 @@ namespace ApiWhatsapp.Controllers
         //{
         //    var openAiService = new OpenAIService(new OpenAiOptions()
         //    {
-        //        ApiKey = "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",
+        //        ApiKey = "",
                 
         //    });
 
